@@ -30,7 +30,7 @@ header .main-nav li, header .right-nav li{
 header .main-nav li a, header .right-nav li a{
     color: white;
     text-decoration: none;
-    font-family: 'built_tilting', Helvetica, sans-serif;
+    font-family: 'built_titling', Helvetica, sans-serif;
     font-weight: 200;
     font-size: 20px;
     letter-spacing: 4px;
@@ -38,6 +38,17 @@ header .main-nav li a, header .right-nav li a{
 }
 
 /* END OF HEADER */
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+#hero .container {
+    display: flex;
+    align-items: center;
+    height: 700px;
+}
 
 #hero {
     width: 100%;
@@ -47,12 +58,6 @@ header .main-nav li a, header .right-nav li a{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
-
-#hero .container {
-    display: flex;
-    align-items: center;
-    height: 700px;
 }
 
 .hero-text {
@@ -73,11 +78,6 @@ header .main-nav li a, header .right-nav li a{
     font-weight: normal;
     color: #FFFFFF;
     line-height: 1;
-}
-
-.container {
-    max-width: 940px;
-    margin: 0 auto;
 }
 
 .btn-primary {
