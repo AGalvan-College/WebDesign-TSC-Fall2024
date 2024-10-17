@@ -1,3 +1,11 @@
+/* MAIN SECTION */
+
+main {
+    position: relative;
+    background-color: white;
+    left: -200px;
+}
+
 /* HEADER SECTION*/
 
 header {
@@ -38,6 +46,25 @@ header .main-nav li a, header .right-nav li a{
     padding: 0 15px;
 }
 
+/* Hamburger Menu */
+.hamburger-menu {
+    display: none;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+/* Tablet Styles */
+@media only screen and (max-width: 1024px) {
+
+    header .main-nav, header .right {
+        display: none;
+    }
+    
+    .hamburger-menu {
+        display: block;
+    }
+}
 /* END OF HEADER */
 
 /* HERO SECTION */
