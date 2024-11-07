@@ -92,15 +92,6 @@ header .main-nav li a, header .right-nav li a{
     padding: 0 15px;
 }
 
-header.sticky {
-    position: fixed;
-    top: 0;
-    background-color: #212121;
-    background-image: none;
-    animation-name: sticky-animation;
-    animation-duration: 0.3s;
-}
-
 /* Hamburger Menu */
 .hamburger-menu {
     display: none;
@@ -120,11 +111,6 @@ header.sticky {
         display: block;
     }
 }
-
-.nav li a:hover{
-    text-decoration: underline;
-}
-
 /* END OF HEADER */
 
 /* HERO SECTION */
@@ -148,9 +134,9 @@ header.sticky {
 
 #hero {
     width: 100%;
-    height: 700px;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.4) 100%),
-    url("../img/hero-image.jpg");
+    height: 400px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 100%),
+    url("../img/jquery-banner.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -199,15 +185,6 @@ header.sticky {
     padding: 12px 22px;
     border: none;
     outline: none;
-    transition: all 0.3s ease;
-}
-
-.btn-primary:hover {
-    background: #A3171B;
-}
-
-.btn-primary:active {
-    box-shadow: inset 0 8px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* END OF BUTTONS */
