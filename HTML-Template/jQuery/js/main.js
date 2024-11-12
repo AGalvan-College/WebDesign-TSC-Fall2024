@@ -1,5 +1,8 @@
 $(document).ready(function() {
     
+    $('#mobilenav_id').load('mobile_headers.html');
+    $('#footer_id').load('footers.html');
+
     $('.hamburger-menu').click(function(){
         event.stopPropagation();
         

@@ -1,10 +1,16 @@
+body {
+    background-color: #2F353A;
+    margin: 0;
+}
+
 /* MAIN SECTION */
 
 main {
     position: relative;
-    background-color: white;
+    background-color: #2F353A;
     left: 0;
     transition: all 0.2s ease-in-out;
+    margin: 0;
 }
 
 main.active {
@@ -57,8 +63,12 @@ main.active {
 header {
     width: 100%;
     height: 70px;
-    background-image: linear-gradient(0deg, rgba(0,0,0,0.00) 0%, rgba(0,0,0,0.50) 50%);
-    position: absolute;
+    background-color: #3a4149;
+    border-bottom: 1px solid #23282c;
+    
+    position: sticky;
+    top: 0;
+    box-sizing: border-box;
 }
 
 header .logo {
@@ -118,6 +128,7 @@ header .main-nav li a, header .right-nav li a{
 .container {
     max-width: 940px;
     margin: 0 auto;
+    color: white;
 }
 
 /* Tablet Styles */
@@ -192,8 +203,9 @@ header .main-nav li a, header .right-nav li a{
 /* BLOG SECTION */
 
 #blog {
-    margin-bottom: 50px;
+    margin-top: 50px;
 }
+
 #blog h2 {
     font-family: 'built_titling', Helvetica, sans-serif;
     font-weight: 200;
@@ -212,6 +224,7 @@ header .main-nav li a, header .right-nav li a{
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .blog-post {
@@ -241,20 +254,28 @@ header .main-nav li a, header .right-nav li a{
 
 .blog-post .blog-post-date {
     font-size: 14px;
-    color: #9A9A9A;
+    color: white;
     margin-top: 20px;
 }
 
 .blog-post h3 {
     font-size: 20px;
-    color: #4A4A4A;
+    color: white;
     letter-spacing: -0.4px;
     line-height: 1.4;
 }
 
+.blog-post h3 a{
+    color: white;
+}
+
+.blog-post h3 a:hover{
+    color: #8a2b2b;
+}
+
 .blog-post .blog-post-desc {
     font-size: 14px;
-    color: #4A4A4A;
+    color: white;
     line-height: 1.6;
 }
 
@@ -267,6 +288,7 @@ header .main-nav li a, header .right-nav li a{
 .blog-show-more {
     text-align: center;
 }
+
 /* END OF BLOG */
 
 /* ABOUT US */
@@ -378,13 +400,17 @@ header .main-nav li a, header .right-nav li a{
 /* FOOTER */
 
 footer {
-    background: black;
+    background-color: #3a4149;
     color: white;
+    border-top: 1px solid #23282c;
+    width: 100%;
+    bottom: 0;
+    z-index:9;
 }
 
 footer .container {
     display: flex;
-    height: 120px
+    height: 100px;
 }
 
 /*Small Mobile Styles */

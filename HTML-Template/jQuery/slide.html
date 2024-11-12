@@ -18,29 +18,71 @@
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
+       
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
-        <div class="mobile-nav">
-            <ul>
-                <li><a href="index.html" title="Jquery CDN link page" target="_Jquery">Jquery CDN</a></li>
-                <li><a href="events.html" title="Using Jquery Events">Events</a></li>
-                <li><a href="hiding.html" title="Hiding Elements using Jquery">Hide</a></li>
-                <li><a href="slide.html" title="Using Jquery to slide elements">Slide</a></li>
-                <li><a href="animate.html" title="Animate using CSS">Animate</a></li>
-                <li><a href="stop.html" title="Using Jquery to stop animation Effects">Stop</a></li>
-                <li><a href="scroll.html" title="Scrolling to section on document load">Scroll</a></li>
-                <li><a href="showpwd.html" title="How to show password in iput using jQuery">Show</a></li>
-                <li><a href="getset.html" title="Getting and Setting DOM using jQuery">Get/Set DOM</a></li>
-                <li><a href="append.html">Append</a></li>
-                <li><a href="https://texassouthmostcollege.instructure.com/login">Login</a></li>
-                <li><iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Ffacebook.com%2Fphilippehongcreative&width=51&layout=button&action=like&size=small&show_faces=false&share=false&height=65&appId=235448876515718" width="51" height="20" style="border:none;overflow:hidden"></iframe></li>
-            </ul>
-        </div>
+        <div id="mobilenav_id" class="mobile-nav"></div>
+        
         <!-- Add your site or application content here -->
         <main>
-            <header>
+            <style>
+                #side-nav ul li a,#side-nav ul li {
+                text-decoration: none;
+                list-style-type: none;
+                } 
+                
+                nav {
+                width: 240px;
+                height: 40vh;
+                background-color: #000;
+                display: none;
+                }
+                
+                #side-nav a, #side-nav p {
+                color: #ffffff;
+                font-size: 20px;
+                text-decoration: none;
+                padding: 10px 20px;
+                margin: 0 5px;
+                position: relative;
+                }
+
+                #side-nav a::before {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 0;
+                height: 4px;
+                background: linear-gradient(90deg, #F1C40F, #E74C3C); /* Tweak the color if needed */
+                border-radius: 0;
+                transition: all 0.5s ease-in-out;
+                }
+
+                #side-nav a:hover::before {
+                width: 100%;
+                border-radius: 50%;
+                } 
+                
+                /* info-title and info-content */
+                .info-box{
+                background-color: red;
+                }
+                
+                .info-title{
+                padding: 5px 5px 0px 5px;
+                }
+                
+                .info-content{
+                background-color: #F1C40F;
+                padding: 5px;
+                }
+              
+            </style>
+            
+           <header>
                 <a class="logo" href="index.html"><img src="img/Dark-jQuery-Logo.png" alt="jQuery" height="40"></a>              
                 <ul class="main-nav">
                     <li><a href="events.html" title="Using Jquery Events">Events</a></li>
@@ -53,16 +95,14 @@
                     <li><a href="getset.html" title="Getting and Setting DOM using jQuery">Get/Set DOM</a></li>
                     <li><a href="append.html">Append</a></li>
                 </ul>
-                    
-                    <ul class="right-nav">
-                    <li><a href="https://texassouthmostcollege.instructure.com/login" target="Canvas" Title="Canvas Link">Login</a></li>
-                    <li><a href="https://www.youtube.com/playlist?list=PL0eyrZgxdwhy7byLHsVkuhtRV_IpoJU7n"><img src="img/yt_logo_rgb_light.png" height="15"></a></li>
+
+                <ul class="right-nav">
+
                 </ul>
-                
-            <div class="hamburger-menu">
-              <img src="img/hambuger-icon.svg" alt="Icon Menu">
-            </div>
-            
+
+                <div class="hamburger-menu">
+                    <img src="img/hambuger-icon.svg" alt="Icon Menu">
+                </div>
             </header>
 
             <section id="hero">
@@ -75,34 +115,40 @@
                 <div class="container">
                     <h2><b>Blog</b> Everything about Slide</h2>
 
+                    <nav id="side-nav">
+                        <ul>
+                            <li> <a class="active" href="#">Home</a></li>
+                            <li> <a href="#">My channel</a></li>
+                            <li> <a href="#">Trending</a></li>
+                            <li> <a href="#">Subscriptions</a></li>
+                        </ul>
+                        <ul>
+                            <li><p>LIBRARY</p></li>
+                            <li><a href="#">History</a></li>
+                            <li><a href="#">Watch Later</a></li>
+                            <li><a href="#">Purchases</a></li>
+                            <li><a href="#">jQuery</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="info-box">
+                        <div class="info-title">
+                            <p>Info Title!</p>
+                        </div>
+                        <div class="info-content">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        </div>
+                    </div>
                     
                 </div>
             </section>
 
-        
+            <br>
 
             <footer>
-               <div class="container">
-                    <a class="logo" href="index.html"><img src="img/Dark-jQuery-Logo.png" alt="jQuery" height="50"></a>              
-                    <ul class="main-nav">
-                        <li><a href="events.html" title="Using Jquery Events">Events</a></li>
-                        <li><a href="hiding.html" title="Hiding Elements using Jquery">Hide</a></li>
-                        <li><a href="slide.html" title="Using Jquery to slide elements">Slide</a></li>
-                        <li><a href="animate.html" title="Animate using CSS">Animate</a></li>
-                        <li><a href="stop.html" title="Using Jquery to stop animation Effects">Stop</a></li>
-                        <li><a href="scroll.html" title="Scrolling to section on document load">Scroll</a></li>
-                        <li><a href="showpwd.html" title="How to show password in iput using jQuery">Show</a></li>
-                        <li><a href="getset.html" title="Getting and Setting DOM using jQuery">Get/Set DOM</a></li>
-                        <li><a href="append.html">Append</a></li>
-                    </ul>
-                        
-                    <ul class="right-nav">
-                        <li><a href="https://texassouthmostcollege.instructure.com/login" target="Canvas" Title="Canvas Link">Login</a></li>
-                        <li><a href="https://www.youtube.com/playlist?list=PL0eyrZgxdwhy7byLHsVkuhtRV_IpoJU7n"><img src="img/yt_logo_rgb_dark.png" height="15"></a></li>
-                    </ul>
-                    
-                </div>
+                <div id="footer_id" class="container"></div>
             </footer>
+            
         </main>
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
@@ -110,6 +156,22 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
 
+        <script>
+            $(document).ready(function(){
+                $("#menu-toggle").click(function(){
+                    $("#side-nav").toggle();
+                });
+            });
+            
+            $(document).ready(function(){
+                $("#menu-toggle").click(function(){
+                    $("#side-nav").slideToggle(1000);
+                });
+                $(".info-title").click(function(){
+                    $(".info-content").slideToggle(500);
+                });
+            });
+        </script>
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
         <!--
         <script>

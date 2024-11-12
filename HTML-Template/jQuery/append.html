@@ -22,25 +22,11 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
-        <div class="mobile-nav">
-            <ul>
-                <li><a href="index.html" title="Jquery CDN link page" target="_Jquery">Jquery CDN</a></li>
-                <li><a href="events.html" title="Using Jquery Events">Events</a></li>
-                <li><a href="hiding.html" title="Hiding Elements using Jquery">Hide</a></li>
-                <li><a href="slide.html" title="Using Jquery to slide elements">Slide</a></li>
-                <li><a href="animate.html" title="Animate using CSS">Animate</a></li>
-                <li><a href="stop.html" title="Using Jquery to stop animation Effects">Stop</a></li>
-                <li><a href="scroll.html" title="Scrolling to section on document load">Scroll</a></li>
-                <li><a href="showpwd.html" title="How to show password in iput using jQuery">Show</a></li>
-                <li><a href="getset.html" title="Getting and Setting DOM using jQuery">Get/Set DOM</a></li>
-                <li><a href="append.html">Append</a></li>
-                <li><a href="https://texassouthmostcollege.instructure.com/login">Login</a></li>
-                <li><iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Ffacebook.com%2Fphilippehongcreative&width=51&layout=button&action=like&size=small&show_faces=false&share=false&height=65&appId=235448876515718" width="51" height="20" style="border:none;overflow:hidden"></iframe></li>
-            </ul>
-        </div>
+        <div id="mobilenav_id" class="mobile-nav"></div>
+        
         <!-- Add your site or application content here -->
         <main>
-            <header>
+           <header>
                 <a class="logo" href="index.html"><img src="img/Dark-jQuery-Logo.png" alt="jQuery" height="40"></a>              
                 <ul class="main-nav">
                     <li><a href="events.html" title="Using Jquery Events">Events</a></li>
@@ -53,16 +39,14 @@
                     <li><a href="getset.html" title="Getting and Setting DOM using jQuery">Get/Set DOM</a></li>
                     <li><a href="append.html">Append</a></li>
                 </ul>
-                    
-                    <ul class="right-nav">
-                    <li><a href="https://texassouthmostcollege.instructure.com/login" target="Canvas" Title="Canvas Link">Login</a></li>
-                    <li><a href="https://www.youtube.com/playlist?list=PL0eyrZgxdwhy7byLHsVkuhtRV_IpoJU7n"><img src="img/yt_logo_rgb_light.png" height="15"></a></li>
+
+                <ul class="right-nav">
+
                 </ul>
-                
-            <div class="hamburger-menu">
-              <img src="img/hambuger-icon.svg" alt="Icon Menu">
-            </div>
-            
+
+                <div class="hamburger-menu">
+                    <img src="img/hambuger-icon.svg" alt="Icon Menu">
+                </div>
             </header>
 
             <section id="hero">
@@ -82,27 +66,9 @@
         
 
             <footer>
-               <div class="container">
-                    <a class="logo" href="index.html"><img src="img/Dark-jQuery-Logo.png" alt="jQuery" height="50"></a>              
-                    <ul class="main-nav">
-                        <li><a href="events.html" title="Using Jquery Events">Events</a></li>
-                        <li><a href="hiding.html" title="Hiding Elements using Jquery">Hide</a></li>
-                        <li><a href="slide.html" title="Using Jquery to slide elements">Slide</a></li>
-                        <li><a href="animate.html" title="Animate using CSS">Animate</a></li>
-                        <li><a href="stop.html" title="Using Jquery to stop animation Effects">Stop</a></li>
-                        <li><a href="scroll.html" title="Scrolling to section on document load">Scroll</a></li>
-                        <li><a href="showpwd.html" title="How to show password in iput using jQuery">Show</a></li>
-                        <li><a href="getset.html" title="Getting and Setting DOM using jQuery">Get/Set DOM</a></li>
-                        <li><a href="append.html">Append</a></li>
-                    </ul>
-                        
-                    <ul class="right-nav">
-                        <li><a href="https://texassouthmostcollege.instructure.com/login" target="Canvas" Title="Canvas Link">Login</a></li>
-                        <li><a href="https://www.youtube.com/playlist?list=PL0eyrZgxdwhy7byLHsVkuhtRV_IpoJU7n"><img src="img/yt_logo_rgb_dark.png" height="15"></a></li>
-                    </ul>
-                    
-                </div>
+                <div id="footer_id" class="container"></div>
             </footer>
+            
         </main>
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
