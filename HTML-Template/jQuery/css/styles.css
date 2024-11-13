@@ -69,6 +69,7 @@ header {
     position: sticky;
     top: 0;
     box-sizing: border-box;
+    z-index:1; /*Add this*/
 }
 
 header .logo {
@@ -110,6 +111,10 @@ header .main-nav li a, header .right-nav li a{
     top: 15px;
 }
 
+.hamburger-menu:hover {
+    color: aqua;
+}
+
 /* Tablet Styles */
 @media only screen and (max-width: 1024px) {
 
@@ -127,6 +132,7 @@ header .main-nav li a, header .right-nav li a{
 
 .container {
     max-width: 940px;
+    min-height: 100%;
     margin: 0 auto;
     color: white;
 }
@@ -204,6 +210,7 @@ header .main-nav li a, header .right-nav li a{
 
 #blog {
     margin-top: 50px;
+    height: 800px;
 }
 
 #blog h2 {
@@ -405,12 +412,11 @@ footer {
     border-top: 1px solid #23282c;
     width: 100%;
     bottom: 0;
-    z-index:9;
+    height: 100px; /* Footer height */
 }
 
 footer .container {
     display: flex;
-    height: 100px;
 }
 
 /*Small Mobile Styles */
@@ -462,3 +468,39 @@ footer .main-nav li a, footer .right-nav li a {
 }
 
 /* END FOOTER SECTION */
+
+/* */
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+    color: white;
+    margin-top: 50px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.content-wrap {
+    max-width: 940px;
+    min-height: 100%;
+    margin: 0 auto;
+    color: white;
+}
+
+#page-container h2 {
+    font-family: 'built_titling', Helvetica, sans-serif;
+    font-weight: 200;
+    font-size: 60px;
+}
+
+/* Small Mobile Styles */
+@media only screen and (max-width: 400px){
+    #page-container h2 {
+        font-size: 40px;
+    }
+}
+
+#content-wrap {
+    padding-bottom: 100px;    /* Footer height */
+}
+
