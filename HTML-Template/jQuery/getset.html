@@ -39,6 +39,17 @@
                     alert($("#test3").val());
                 });
                 
+                $("#btn4").click(function() {
+                    $("#test1").text("I replaced this text!");
+                });
+                
+                $("#btn5").click(function() {
+                    $("#test2").html("<p><i>I replaced this html's text!</i></p>");
+                });
+                
+                $("#btn6").click(function() {
+                    $("#test3").val("This is new input data!");
+                });
             });
         </script>
         
@@ -85,6 +96,10 @@
                     <button id="btn1">Text</button>
                     <button id="btn2">HTML</button>
                     <button id="btn3">Input</button>
+                    <br>
+                    <button id="btn4">Change Text</button>
+                    <button id="btn5">Change HTML's Text</button>
+                    <button id="btn6">Change Input's Text</button>
                 </div>
             </section>
 

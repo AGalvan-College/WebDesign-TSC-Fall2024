@@ -23,6 +23,7 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/scroll.js"></script>
 
         
         <!-- Google tag (gtag.js) -->
@@ -35,6 +36,51 @@
           gtag('config', 'G-WRXRCY8L74');
         </script>
         
+        <style type="text/css">
+            .scrollid {
+                max-width: 600px;
+                margin: 0 auto;
+                background-color: #222;
+                color: #fff;
+                font-size: 16px;
+                text-align: center;
+                line-height: 200px;
+            }
+            
+            .scrollid a {
+                text-decoration: none;
+            }
+            
+            section:not(#page-container, #hero){
+                width: 100%;
+                height: 800px;
+            }
+            
+            p {
+                font-size: 20px;
+                color: #fff;
+                text-align: center;
+                padding-top: 60px;
+            }
+            
+            .bg1 {
+                background-color: #000;
+            }
+            
+            .bg2 {
+                background-color: #777;
+            }
+            
+            .bg3 {
+                background-color: #555;
+            }
+            
+            .bg4 {
+                background-color: #333;
+            }
+            
+        </style>
+
     </head>
     <body>
         <!--[if lte IE 9]>
@@ -60,12 +106,42 @@
                 <div class="content-wrap">
                     <h2><b>Blog</b> Everything about Scroll</h2>
 
+                    <div>
+                       <div class="scrollid">
+                            <a href= "#scroll-section3">
+                                <p>Go to section3</p>
+                            </a>
+                        </div>
+                    </div>
                     
+                    <br>
+                    
+                    <div>
+                        <div class="scrollid">
+                            <a href= "#scroll-post">
+                                <p>Go to the post section</p>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </section>
 
-        
-
+            <section class="bg1">
+                <p>Section 1</p>
+            </section>
+            
+            <section class="bg2">
+                <p>Section 2</p>
+            </section>
+            
+            <section class="bg3" id="scroll-section3">
+                <p>Section 3</p>
+            </section>
+            
+            <section class="bg4" id="scroll-post">
+                <p>Post</p>
+            </section>
+            
             <footer>
                 <div id="footer_id" class="container"></div>
             </footer>

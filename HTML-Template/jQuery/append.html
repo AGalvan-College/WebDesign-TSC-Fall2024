@@ -36,7 +36,22 @@
           gtag('config', 'G-WRXRCY8L74');
         </script>
         
-        
+        <script>
+            $(document).ready(function() {
+                $("#content-wrap_append").before("<p>Hi, I'm outside of the div tag at the top!</p>");
+                $("#content-wrap_append").after("<p>Hi, I'm outside of the div tag at the bottom!</p>");
+                
+                $("#content-wrap_append").prepend("<p>New Intro paragraph</p>"); 
+                $("#content-wrap_append").append("<p>New Conclusion paragraph</p>"); 
+                
+                var createEle = document.createElement("p");
+                createEle.innerHTML = "I got created by the createEle function"
+                
+                $("#content-wrap_append").append("<p>This is first part</p>", "<p>This is second part within single append</p>", createEle); 
+                
+
+            });
+        </script>
     </head>
     <body>
         <!--[if lte IE 9]>
@@ -62,9 +77,11 @@
                 <div class="content-wrap">
                     <h2><b>Blog</b> Everything about Append</h2>
 
-                    <p id="p-first">The first paragraph</p>
-                    <p id="p-second">The second paragraph</p>
-                    <p id="p-third">The third paragraph</p>
+                    <div id="content-wrap_append">
+                        <p id="p-first">The first paragraph</p>
+                        <p id="p-second">The second paragraph</p>
+                        <p id="p-third">The third paragraph</p>
+                    </div>
                 </div>
             </section>
 
